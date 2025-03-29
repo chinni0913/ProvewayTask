@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+  background-color: #f4f4f4;
+}
+.box {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.expanded {
+  height: auto;
+  background-color: #ffe6e6;
+  border: 2px solid #ff4d4d;
+}
+.options {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.box.expanded .options {
+  display: flex;
+}
+button,
+select {
+  padding: 5px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+}
+input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+}
+.discount {
+  background: #ff6685;
+  width: 20px;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+  font-size: 14px;
+}
+
+.bogo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0;
+}
+.bogo-line {
+  flex: 1;
+  height: 1px;
+  background-color: #ddd;
+}
+.bogo-text {
+  color: #ff6685;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+  white-space: nowrap;
+}

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>proveway Task</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+               <div class="bogo-container">
+                              <div class="bogo-line"></div>
+                              <div class="bogo-text">YAY! It's BOGO</div>
+                              <div class="bogo-line"></div>
+                            </div>
+    <div class="box" onclick="toggleBox(this)">
+      <span>
+        <input
+          type="radio"
+          name="unit"
+          onclick="event.stopPropagation(); selectBox(this)"
+        />
+        <strong>1 Unit</strong>
+        <span class="discount">10% Off</span>
+      </span>
+
+      <div class="price">
+        $10.00 USD <br />
+        <span class="old-price">$24.00 USD</span>
+      </div>
+      <div class="options">
+        <div style="display: flex; font-size: 10px">
+          <label for="size" style="margin-left: 20px; font-weight: bold"
+            >Size</label
+          >
+          <label for="colour" style="margin-left: 30px; font-weight: bold"
+            >Colour</label
+          >
+        </div>
+
+        <div class="option-row">
+          <span>#1</span>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+        <div class="option-row">
+          <span>#2</span>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Colour</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(this)">
+      <span>
+        <input
+          type="radio"
+          name="unit"
+          onclick="event.stopPropagation(); selectBox(this)"
+        />
+        <strong>2 Unit</strong>
+        <span class="discount">20% Off</span>
+      </span>
+
+      <div class="price">
+        $18.00 USD <br />
+        <span class="old-price">$24.00 USD</span>
+      </div>
+      <div class="options">
+        <div style="display: flex; font-size: 10px">
+          <label for="size" style="margin-left: 20px; font-weight: bold"
+            >Size</label
+          >
+          <label for="colour" style="margin-left: 30px; font-weight: bold"
+            >Colour</label
+          >
+        </div>
+
+        <div class="option-row">
+          <span>#1</span>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+        <div class="option-row">
+          <span>#2</span>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Colour</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="box" onclick="toggleBox(this)">
+      <span>
+        <input
+          type="radio"
+          name="unit"
+          onclick="event.stopPropagation(); selectBox(this)"
+        />
+        <strong>3 Unit</strong>
+        <span class="discount">30% Off</span>
+      </span>
+
+      <div class="price">
+        $24.00 USD <br />
+        <span class="old-price">$24.00 USD</span>
+      </div>
+      <div class="options">
+        <div style="display: flex; font-size: 10px">
+          <label for="size" style="margin-left: 20px; font-weight: bold"
+            >Size</label
+          >
+          <label for="colour" style="margin-left: 30px; font-weight: bold"
+            >Colour</label
+          >
+        </div>
+
+        <div class="option-row">
+          <span>#1</span>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+        <div class="option-row">
+          <span>#2</span>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <select>
+            <option>Colour</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
